@@ -71,7 +71,7 @@ sumna<-sum(is.na(data$steps))
 ```
 The total number of missing values in the dataset is 2304.
 
-##filling the misssing values and creating a new data frame.
+##filling the misssing values with mean of non-misssing data for steps and creating a new data frame.
 
 ```r
 data$steps<-na.aggregate(data$steps,data$interval)
